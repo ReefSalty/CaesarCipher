@@ -54,13 +54,9 @@ document.getElementById('exportBtn').addEventListener('click', () => {
     window.URL.revokeObjectURL(url);
 });
 
-// ... existing JavaScript code ...
-
 document.getElementById('shift').addEventListener('input', function () {
     document.getElementById('shiftValue').textContent = this.value;
 });
-
-// ... remaining JavaScript code ...
 
 document.getElementById('toggleInstructionsBtn').addEventListener('click', function() {
     var instructions = document.getElementById('howToUse');
