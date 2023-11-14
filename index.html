@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Caesar Cipher</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+</head>
+<body>
+    <div class="container">
+        <h1>Caesar Cipher Encoder/Decoder</h1>
+        <textarea id="inputText" placeholder="Enter text here..."></textarea>
+        <div class="slider-container">
+            <input type="range" id="shift" min="0" max="25" value="0">
+            <span id="shiftValue">0</span>
+        </div>        
+        <div class="button-container">
+            <button id="encryptBtn"><i class="fas fa-lock"></i> Encrypt</button>
+            <button id="decryptBtn"><i class="fas fa-unlock"></i> Decrypt</button>
+            <button id="clearBtn" class="danger"><i class="fas fa-trash"></i> Clear All</button>
+        </div>
+        <textarea id="outputText" readonly></textarea>
+        <button id="exportBtn"><i class="fas fa-file-download"></i> Export as Text File</button>
+    </div>
+
+    <div class="container">
+        <h1>How to Use the Caesar Cipher Tool</h1>
+        <button id="toggleInstructionsBtn"><span id="toggleIcon" class="fas fa-chevron-down"></span> Show Instructions</button>
+        <ol id="howToUse">
+            <li>Enter the text you want to encrypt or decrypt in the "Enter text here..." box.</li>
+            <li>Use the slider to select the shift value for the Caesar cipher.</li>
+            <li>Click on the "Encrypt" button to encrypt your text, or "Decrypt" to decrypt it.</li>
+            <li>The result will appear in the box below the buttons.</li>
+            <li>To clear all fields and reset the shift value, click the "Clear All" button.</li>
+            <li>If you want to save the result, click "Export as Text File" to download the text.</li>
+        </ol>
+    </div>
+
+    <footer>
+        <p>&copy; <a href="https://www.reefsalty.co.uk/caesar">ReefSalty</a></p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
